@@ -1,0 +1,6 @@
+# terraform init -backend-config=environments/production.s3.tfbackend
+bucket       = "example-org-terraform-state-production"
+key          = "important-api/production/terraform.tfstate"
+region       = "us-east-1"
+encrypt      = true
+use_lockfile = true
